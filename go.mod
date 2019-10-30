@@ -1,6 +1,9 @@
-module github.com/gin-contrib/pprof
+module github.com/jslyzt/pprof
+
+go 1.13
 
 require (
-	github.com/davecgh/go-spew v1.1.1 // indirect
-	github.com/gin-gonic/gin v1.4.0
+	github.com/json-iterator/go v1.1.8 // indirect
+	github.com/lerryxiao/gin v1.4.0
+	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect
 )

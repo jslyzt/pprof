@@ -2,8 +2,8 @@
 
 [![Build Status](https://travis-ci.org/gin-contrib/pprof.svg)](https://travis-ci.org/gin-contrib/pprof)
 [![codecov](https://codecov.io/gh/gin-contrib/pprof/branch/master/graph/badge.svg)](https://codecov.io/gh/gin-contrib/pprof)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gin-contrib/pprof)](https://goreportcard.com/report/github.com/gin-contrib/pprof)
-[![GoDoc](https://godoc.org/github.com/gin-contrib/pprof?status.svg)](https://godoc.org/github.com/gin-contrib/pprof)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jslyzt/pprof)](https://goreportcard.com/report/github.com/jslyzt/pprof)
+[![GoDoc](https://godoc.org/github.com/jslyzt/pprof?status.svg)](https://godoc.org/github.com/jslyzt/pprof)
 [![Join the chat at https://gitter.im/gin-gonic/gin](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gin-gonic/gin)
 
 gin pprof middleware
@@ -17,13 +17,13 @@ gin pprof middleware
 Download and install it:
 
 ```bash
-go get github.com/gin-contrib/pprof
+go get github.com/jslyzt/pprof
 ```
 
 Import it in your code:
 
 ```go
-import "github.com/gin-contrib/pprof"
+import "github.com/jslyzt/pprof"
 ```
 
 ### Example
@@ -32,8 +32,8 @@ import "github.com/gin-contrib/pprof"
 package main
 
 import (
-	"github.com/gin-contrib/pprof"
-	"github.com/gin-gonic/gin"
+	"github.com/jslyzt/pprof"
+	"github.com/lerryxiao/gin"
 )
 
 func main() {
