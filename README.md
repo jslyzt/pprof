@@ -33,7 +33,7 @@ package main
 
 import (
 	"github.com/jslyzt/pprof"
-	"github.com/lerryxiao/gin"
+	"github.com/jslyzt/gin"
 )
 
 func main() {
@@ -52,6 +52,34 @@ func main() {
 	pprof.Register(router, "dev/pprof")
 	router.Run(":8080")
 }
+```
+
+### custom router group
+
+```go
+package main
+
+import (
+	"net/http"
+
+	"github.com/gin-contrib/pprof"
+	"github.com/jslyzt/gin"
+)
+
+func main() {
+	router := gin.Default()
+	pprof.Register(router)
+	adminGroup := router.Group("/admin", func(c *gin.Context) {
+		if c.Request.Header.Get("Authorization") != "foobar" {
+			c.AbortWithStatus(http.StatusForbidden)
+			return
+		}
+		c.Next()
+	})
+	pprof.RouteRegister(adminGroup, "pprof")
+	router.Run(":8080")
+}
+
 ```
 
 ### Use the pprof tool

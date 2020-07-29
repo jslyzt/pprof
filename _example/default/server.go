@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/jslyzt/gin"
 	"github.com/jslyzt/pprof"
-	"github.com/lerryxiao/gin"
 )
 
 func main() {
